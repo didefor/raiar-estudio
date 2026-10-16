@@ -1,5 +1,9 @@
 # Raiar Estúdio — entrega e publicação
 
+## Deploy na Vercel
+
+Configuração estática em `vercel.json`, com framework desativado, instalação/build vazios e saída na raiz. Não é necessário backend, dependências ou rewrite para as rotas hash. Cabeçalhos de segurança básicos são enviados sem bloquear o iframe externo do Instagram. `.vercelignore` restringe o deploy aos arquivos públicos e às imagens otimizadas; originais e documentos internos ficam de fora. `.vercel/` é ignorado pelo Git. Importar `didefor/raiar-estudio` na Vercel conforme o README. A configuração não cria conta, não vincula domínio nem executa um deploy automaticamente; essas etapas exigem acesso à conta Vercel.
+
 ## Atualização da página Acontece
 
 As três capas editoriais de Acontece e suas páginas internas agora usam as fotos locais enviadas: edição no celular, celebração de 15 anos e detalhes do casamento. As escolhas são compartilhadas com a home em `homeMedia.articleCovers`, inclusive após filtrar publicações. Textos alternativos descrevem as fotos e as referências a imagens de banco foram removidas dessas páginas. Capas da listagem e dos artigos preservam a imagem completa. Nenhuma atividade, data ou publicação de Instagram foi inventada; o conteúdo textual continua editorial. Feed e fallback do Instagram permanecem inalterados.

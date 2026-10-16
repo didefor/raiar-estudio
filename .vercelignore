@@ -1,0 +1,17 @@
+# Enviar à Vercel somente os arquivos públicos do site.
+/*
+!/index.html
+!/styles.css
+!/app.js
+!/content.js
+!/vercel.json
+!/assets/
+
+/assets/*
+!/assets/favicon.svg
+!/assets/raiar-simbolo.svg
+!/assets/social.svg
+!/assets/fotos/
+
+/assets/fotos/*
+!/assets/fotos/otimizadas/
