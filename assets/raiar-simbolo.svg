@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="270 280 490 520" fill="none">
+  <title>Símbolo Raiar Estúdio</title>
+  <g stroke="#B77943" stroke-width="9">
+    <path id="ray" d="M293 426H519"/>
+    <use href="#ray" transform="rotate(22.5 406 426)"/>
+    <use href="#ray" transform="rotate(45 406 426)"/>
+    <use href="#ray" transform="rotate(67.5 406 426)"/>
+    <use href="#ray" transform="rotate(90 406 426)"/>
+    <use href="#ray" transform="rotate(112.5 406 426)"/>
+    <use href="#ray" transform="rotate(135 406 426)"/>
+    <use href="#ray" transform="rotate(157.5 406 426)"/>
+  </g>
+  <circle cx="402" cy="707" r="46" fill="#D69700"/>
+  <path d="M565 311C775 405 775 673 565 767" stroke="#A5C3D8" stroke-width="16" stroke-linecap="round"/>
+</svg>

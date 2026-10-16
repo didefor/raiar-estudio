@@ -1,0 +1,17 @@
+# Arquivos anteriores, sem relação com o site da Raiar
+novo-usuario-saas.*
+
+# Preservar originais localmente; publicar somente as cópias usadas no site
+assets/fotos/*
+!assets/fotos/otimizadas/
+
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários
+node_modules/
+*.log
+Thumbs.db
+.DS_Store
