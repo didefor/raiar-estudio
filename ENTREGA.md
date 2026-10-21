@@ -1,5 +1,16 @@
 # Raiar Estúdio — entrega e publicação
 
+## Atualização v11 (out/2026): refinamento, animações e técnica
+
+- **Legibilidade:** tamanhos mínimos de texto elevados (rótulos 11–12 px, corpo 16 px), contraste dos cinzas ajustado para WCAG AA, foco visível nos campos.
+- **Textos:** avisos e descrições repetitivos enxugados em todas as páginas (Privacidade e Gestão mantidas). Faixa duplicada do Instagram removida da home.
+- **Animações:** cabeçalho fixo com fundo ao rolar; títulos surgem por linha; seções e cartões revelam ao rolar; foto da capa com abertura; parallax leve no selo e na legenda da home; hover em botões, links, cartões e ícones; modal, FAQ e botão flutuante animados. Tudo desativado com "reduzir movimento" do sistema. Código em `app.js` (bloco "Movimento") e no fim de `styles.css` ("Refinamento v11").
+- **Desempenho:** fotos em WebP (cerca de 50% menores; JPGs mantidos), pré-carregamento da foto da capa, pesos de fonte reduzidos.
+- **Compartilhamento/SEO:** `assets/social.jpg` (1200×630), ícone `assets/apple-touch-icon.png`, metadados Open Graph/Twitter completos e dados estruturados (schema.org).
+- **WhatsApp:** preencha `settings.whatsapp` em `content.js` (55 + DDD + número). O formulário passa a abrir o WhatsApp e o botão flutuante fica verde com "Fale no WhatsApp".
+- **Domínio:** preencha `settings.siteUrl` em `content.js` e troque `./assets/social.jpg` por URL absoluta na tag `og:image` do `index.html` para a prévia aparecer no WhatsApp/Instagram.
+
+
 ## Deploy na Vercel
 
 Configuração estática em `vercel.json`, com framework desativado, instalação/build vazios e saída na raiz. Não é necessário backend, dependências ou rewrite para as rotas hash. Cabeçalhos de segurança básicos são enviados sem bloquear o iframe externo do Instagram. `.vercelignore` restringe o deploy aos arquivos públicos e às imagens otimizadas; originais e documentos internos ficam de fora. `.vercel/` é ignorado pelo Git. Importar `didefor/raiar-estudio` na Vercel conforme o README. A configuração não cria conta, não vincula domínio nem executa um deploy automaticamente; essas etapas exigem acesso à conta Vercel.
